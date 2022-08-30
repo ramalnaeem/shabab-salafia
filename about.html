@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="icon" href="WhatsApp Image 2022-07-13 at 5.38.54 AM.jpeg" style="border-radius: 50px ;">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+     #form{
+        margin-left: 200dp;
+    }
+    *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #99F0C2;
+          
+        }
+        .main_section{
+            width: 100%;
+            
+        }
+        .main_section .container{
+            width: 80%;
+            display: block;
+            margin: 0px auto;
+            padding: 50px 0px;
+        }
+        .container .title{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .container .title h1{
+            text-transform: uppercase;
+            font-size: 35px;
+            color: #065730;
+        }
+        .container .title h1::after{
+            content: "";
+            height: 5px;
+            width: 150px;
+            background-color: #065730;
+            border-radius: 25px;
+            display: block;
+            margin: auto;
+        }
+        .content{
+            float: left;
+            width: 55%;
+        }
+        .image-section{
+            float: right;
+            width: 40%;
+        }
+        .image-section img{
+            width: 100%;
+            height: auto;
+        }
+        .content .article h3{
+            color: #065730;
+            font-size: 17px;
+        }
+
+        .content .article .button{
+            margin-top: 50px;
+        }
+        .content .article .button a{
+            text-decoration: none;
+            padding: 8px 25px;
+            background-color: #065730;
+            border-radius: 40px;
+            color: #fff;
+            font-size: 18px;
+            letter-spacing: 1.5px;
+        }
+
+        .content .article .button a:hover{
+            color: #065730;
+            background-color: #fff;
+            transition: 1s ease;
+
+        }
+        .container .social-icons{
+            width: 100%;
+            clear: both;
+            margin-top: 50px;
+            text-align: center;
+            display: inline-block;
+        }
+        .container .social-icons img{
+            color: #fff;
+            font-size: 22px;
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            line-height: 45px;
+            text-align: center;
+            background-color: #fff;
+            margin: 0px 5px;
+        }
+        .container .social-icons img:hover{
+             color: #fff;     
+             background-color: #99F0C2;
+             transition: 1s ease;
+             transform: rotate(360deg);
+        }
+        @media screen and (max-width: 768px) {
+            .main_section .container{
+                width: 80%;
+                display: block;
+                margin: auto;
+            }
+            .content{
+                float: none;
+                width: 100%;
+                display: block;
+                margin: auto;
+            }
+            .image-section{
+                float: none;
+                width: 100%;
+                margin-top: 50px;
+            }
+            .image-section img{
+                width: 100%;
+                height: auto;
+                display: block;
+                margin: auto;
+            }
+            .container .title h1{
+                text-align: center;
+                font-size: 30px;
+            }
+            .container .article .button{
+                text-align: center;
+            }
+            .container .article .button a{
+                padding: 6px 15px;
+                font-size: 16px; 
+            }
+            .container .social-icons img{
+                font-size: 19px;
+                height: 35px;
+                width: 35px;
+                line-height: 35px;
+                
+            }
+
+            
+        }
+
+
+
+
+</style>
+
+<body>
+    <div>
+
+        <nav class="navbar navbar-expand-md  navbar-dark" style="background-color:rgb(153, 240, 194) ;" id="nav">
+            <a class="navbar-brand" href="#"><img src="WhatsApp Image 2022-07-13 at 5.38.54 AM.jpeg" alt="" width="80dp" height="80dp" title="shabab salafia" style="border-radius:50px ;"></a>
+            <button  class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="luncherpage.html" class="nav-link" style="color:black ;">Home</a></li>
+                    <!-- dropdown -->
+                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                        data-toggle="dropdown" style="color:black ;">Services</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="hadith.html" style="color:black ;">Hadith</a>
+                        <a class="dropdown-item" href="quram.html" style="color:black ;">Al-Quran</a>
+                        <a class="dropdown-item" href="dua.html" style="color:black ;">Dua</a>
+                        <a class="dropdown-item" href="namaz.html" style="color:black ;">Namaz</a>
+                    </div>
+                </li>
+    
+    
+                    <li class="nav-item"><a href="about.html" class="nav-link" style="color:black ;">About us</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link" style="color:black ;">Contact Us</a></li>
+
+                </ul>
+    
+    
+            </div>
+            <!-- search bar -->
+    
+            <form class="form-inline" action="" id="form">
+                <input class="form-control mr-sm-2" type="text" placeholder="search" >
+                <button class="btn btn-outline-success"  type="submit" >search</button>
+            </form>
+        </nav>
+    </div>
+    <hr>
+
+    <!-- about us -->
+
+    <div class="main_section">
+        <div class="container">
+            <div class="title">
+                <h1>About Us</h1>
+            </div>
+            <div class="content">
+                <div class="article">
+                    <h3>
+                        Assalam-o-Alaikum! <br>
+                        I am Muhammad Tariq_salfi.I lived in Riyadh the city of Suadi Arabia.This site is about to the Islamic daily posts.
+                        We provides you the Quran with translation in urdu, Dua's , Namaz(with proper steps by explaining and duas)
+                        and Hadith.
+                        <h4>طَلَبُ الْعِلْمِ فَرِيضَةٌ عَلَى كُلِّ مُسْلِمٍ</h4>
+                        If you have any kind of issue regarding life and you have to solve it is the light of Islam.
+                         You just contact us.
+
+                    </h3>
+                    <div class="button">
+                        <a href="">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="resize_img2.png" width="200dp"  >
+            </div>
+            <div class="social-icons">
+                <a href=""><img src="facebook-icon.png" ></a>
+                <a href=""><img src="Instagram_icon.png.webp" ></a>
+                <a href=""><img src="twiter-icon.png" ></a>
+                <a href=""><img src="watsap-icon.png" ></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <hr>
+    <!-- copyright -->
+    <div style="text-align:center ; background-color:rgb(153, 240, 194) ;">
+        <p>COPYRIGHTS 2022-2023 | ALL RIGHT RESERVED</p>
+    </div>
+    
+</body>
+</html>

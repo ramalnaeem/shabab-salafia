@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>louncher page</title>
+    <link rel="icon" href="WhatsApp Image 2022-07-13 at 5.38.54 AM.jpeg" style="border-radius: 50px ;">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+    /* #nav{
+        position: fixed;
+    } */
+    #form{
+        margin-left: 200dp;
+    }
+    
+    #a:hover{
+        background-color: rgb(153, 240, 194);
+    }
+    #icon:hover{
+             color: #fff;     
+             background-color: #99F0C2;
+             transition: 1s ease;
+             transform: rotate(360deg);
+
+    }
+
+</style>
+<body>
+    <div>
+
+    <nav class="navbar navbar-expand-md  navbar-dark" style="background-color:rgb(153, 240, 194) ;" id="nav">
+        <a class="navbar-brand" href="#"><img src="WhatsApp Image 2022-07-13 at 5.38.54 AM.jpeg" alt="" width="80dp" height="80dp" title="shabab salafia" style="border-radius:50px ;"></a>
+        <button  class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="luncherpage.html" class="nav-link" style="color:black ;">Home</a></li>
+                <!-- dropdown -->
+                <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                    data-toggle="dropdown" style="color:black ;">Services</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="post_select.php" style="color:black ;">Hadith</a>
+                    <a class="dropdown-item" href="quram.html" style="color:black ;">Al-Quran</a>
+                    <a class="dropdown-item" href="dua.html" style="color:black ;">Dua</a>
+                    <a class="dropdown-item" href="namaz.html" style="color:black ;">Namaz</a>
+                </div>
+            </li>
+
+
+                <li class="nav-item"><a href="about.html" class="nav-link" style="color:black ;">About us</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link" style="color:black ;">Contact Us</a></li>
+
+            </ul>
+
+
+        </div>
+        <!-- search bar -->
+
+        <form class="form-inline" action="search.php" method="get" id="form">
+            <input class="form-control mr-sm-2" type="text" name="search" id="search" placeholder="search"  >
+            <button class="btn btn-outline-success"  type="submit" >search</button>
+        </form>
+    </nav>
+</div>
+<hr style="background-color: rgb(153, 240, 194);">
+
+<!-- carrousel -->
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+      <li data-target="#demo" data-slide-to="3"></li>
+      <li data-target="#demo" data-slide-to="4"></li>
+    </ul>
+  
+    <!-- The slideshow -->
+    <div style="text-align: center;" class="carousel-inner">
+      <div  class="carousel-item active">
+        <img src="resize_img2.png" alt="" width="90%" height="450px">
+      </div>
+      <div class="carousel-item">
+        <img src="quran.webp" alt="" width="90%" height="450px">
+      </div>
+      <div class="carousel-item">
+        <img src="hadith.jpg" alt="" width="90%" height="450px">
+         </div>
+         <div class="carousel-item">
+          <img src="dua.jpg" alt="" width="90%" height="450px">
+           </div>
+           <div class="carousel-item">
+            <img src="namaz.jpg" alt="" width="90%" height="450px">
+             </div>
+             <div class="carousel-item">
+
+    
+    </div>
+  
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+  <hr style="background-color: rgb(153, 240, 194);">
+
+<!-- poster -->
+<!-- <div class="container-fluid " >
+<img style="width:100% ; height:450px ;" src="resize_img2.png" alt="">
+</div><hr> -->
+
+<!-- card -->
+<div class="d-flex justify-content-around mb-4">
+
+<div class="card" style="width:400px;" id="a">
+    <img class="card-img-top" src="quran.webp" style="height:200px ;">
+    <div class="card-body">
+        <h4 class="card-title" style="font-family:fantasy ;">AL-QURAN</h4>
+        <p style="font-family:fantasy ;">خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ</p>
+        <a class="btn btn-outline-success" href="quram.html">Learn Quran</a>
+    </div>
+
+</div>
+
+<div class="card" style="width:400px;" id="a">
+    <img class="card-img-top" src="hadith.jpg" style="height:200px ;">
+    <div class="card-body">
+        <h4 class="card-title" style="font-family:fantasy ;">HADITH</h4>
+        <p style="font-family:fantasy ;">طَلَبُ الْعِلْمِ فَرِيضَةٌ عَلَى كُلِّ مُسْلِمٍ</p>
+        <a class="btn btn-outline-success" href="post_select.php">Learn Hadith</a>
+    </div>
+
+</div>
+
+</div>
+
+
+<div class="d-flex justify-content-around mb-4">
+
+    <div class="card" style="width:400px;" id="a">
+        <img class="card-img-top" src="dua.jpg" style="height:200px ;">
+        <div class="card-body">
+            <h4 class="card-title" style="font-family:fantasy ;">DUA</h4>
+            <p style="font-family:fantasy ;">رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَّفِي الْآخِرَةِ حَسَنَةً وَّقِنَا عَذَابَ النَّارِ</p>
+            <a class="btn btn-outline-success" href="dua.html">Learn Dua</a>
+        </div>
+    
+    </div>
+    
+    <div class="card" style="width:400px;" id="a">
+        <img class="card-img-top" src="namaz.jpg" style="height:200px ;">
+        <div class="card-body">
+            <h4 class="card-title" style="font-family:fantasy ;">NAMAZ</h4>
+            <p style="font-family:fantasy ;">وَأَقِيمُواْ الصَّلاَةَ وَآتُواْ الزَّكَاةَ وَارْكَعُواْ مَعَ الرَّاكِعِينَ</p>
+            <a class="btn btn-outline-success" href="namaz.html">Learn Namaz</a>
+        </div>
+    
+    </div>
+    
+    </div>
+    <hr style="background-color: rgb(153, 240, 194);">
+
+    <!-- footer -->
+    <div style="background-color:rgb(153, 240, 194) ;">
+        <div>
+            <img src="WhatsApp Image 2022-07-13 at 5.38.54 AM.jpeg" alt="" title="shabab salafia" style="width:20% ; border-radius:250px ;" height="20%">
+            
+        </div>
+    
+        <div class="container-fluid">
+            <a href="https://www.facebook.com/profile.php?id=100056097714729"><img src="facebook-icon.png" alt="" style="border-radius:50px ; width:3% ; height: 3%;"></a>
+            <a href="https://t.me/quran_in_hadees_Urdu"><img src="telegram.jpeg" alt="" style="border-radius:50px ; width:3% ; height: 3%;"></a>
+            <a href="https://bit.ly/3SAZQhY"><img src="watsap-icon.png" alt="" style="border-radius:50px ; width:3% ; height: 3%;"></a>
+           
+            <a href="hadith_post.html" style="float:right ;">post</a>
+           
+        </div>
+        <p> Assalam-o-Alaikum! <br>
+            I am Muhammad Tariq_salfi.I lived in Riyadh the city of Suadi Arabia.This site is about to the Islamic daily posts. <br>
+            We provides you the Quran with translation in urdu, Dua's , Namaz(with proper steps by explaining and duas)
+            and Hadith.
+            <h6>طَلَبُ الْعِلْمِ فَرِيضَةٌ عَلَى كُلِّ مُسْلِمٍ</h6>
+            If you have any kind of issue regarding life and you have to solve it is the light of Islam.
+             You just contact us.</p>
+    
+
+    </div>
+    
+
+
+
+<!-- copyright -->
+<hr style="background-color: rgb(153, 240, 194);">
+    <div style="text-align:center ; background-color:rgb(153, 240, 194) ;">
+        <p>COPYRIGHTS 2022-2023 Shabab Salafia |  ALL RIGHT RESERVED</p>
+    </div>
+
+    
+</body>
+</html>
